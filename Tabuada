@@ -1,0 +1,16 @@
+#requisitando o número inteiro para tabuada
+num = int(input("Digite o número inteiro de 1 a 10: "))
+
+# Verificando se o número informado se enquadra no solicitado
+if num < 1 or num > 10:
+  print("Número inválido. Digite um número inteiro de 1 a 10.")
+  num = int(input("Digite o número inteiro de 1 a 10: "))
+else: # Gerando a função tabuada
+  def tabuada(numero: int):
+    print(f'Tabuada do {num}:')
+    for i in range(11):
+      resultado = num * i
+      print(f'{num} x {i} = {resultado}')
+      
+#lendo a tabuada
+tabuada(num)
